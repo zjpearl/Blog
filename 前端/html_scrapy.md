@@ -8,11 +8,11 @@
 
 Scrapy是一个为了爬取网站数据，提取结构性数据而编写的应用框架。 可以应用在包括数据挖掘，信息处理或存储历史数据等一系列的程序中。
 
-![img](https://pic4.zhimg.com/80/v2-5e7ceadeb3ddd9de9436008322aee147_720w.jpg)
+![img](https://note-image-bed.oss-cn-zhangjiakou.aliyuncs.com/note/v2-5e7ceadeb3ddd9de9436008322aee147_720w.jpg)
 
 
 
-<img src="https://pic3.zhimg.com/80/v2-22c99b0eebd243496b419f0fd57b5b76_720w.jpg" alt="img" style="zoom:80%;" />
+<img src="https://note-image-bed.oss-cn-zhangjiakou.aliyuncs.com/note/v2-22c99b0eebd243496b419f0fd57b5b76_720w.jpg" alt="img" style="zoom:80%;" />
 
 • Scrapy Engine(引擎)：负责Spider、ItemPipeline、Downloader、Scheduler中间的通讯，信号、数据传递等。
 
@@ -71,7 +71,7 @@ scrapy startproject bilibili
 tree/f
 ```
 
-<img src="scrapy.assets/1587558902456.png" alt="1587558902456" style="zoom:50%;" />
+<img src="https://note-image-bed.oss-cn-zhangjiakou.aliyuncs.com/note/1587558902456.png" alt="1587558902456" style="zoom:50%;" />
 
 - scrapy.cfg：配置文件
 
@@ -115,7 +115,7 @@ cd bilibili
 scrapy genspider rankdata http://https://www.bilibili.com/ranking/all/0/0/3/
 ```
 
-<img src="scrapy.assets/1587557918805.png" alt="1587557918805" style="zoom:50%;" />
+<img src="https://note-image-bed.oss-cn-zhangjiakou.aliyuncs.com/note/1587557918805.png" alt="1587557918805" style="zoom:50%;" />
 
 ### 2.3 检测程序与网站的连接
 
@@ -135,11 +135,11 @@ scrapy shell www.bilibili.com
 
 •    将 rotate_useragent.py 拷贝到工程项目中。
 
-![1587622004535](scrapy.assets/1587622004535.png)
+![1587622004535](https://note-image-bed.oss-cn-zhangjiakou.aliyuncs.com/note/1587622004535.png)
 
 设置 setting.py rotate_useragent.py  user-agent
 
-![1587622034718](scrapy.assets/1587622034718.png)
+![1587622034718](https://note-image-bed.oss-cn-zhangjiakou.aliyuncs.com/note/1587622034718.png)
 
 或者在setting.py 中设置：
 
@@ -261,15 +261,15 @@ class BilibiliPipeline(object):
 
 ### 3.4 在setting.py文件中设置执行流的优先级
 
-![1587561703140](scrapy.assets/1587561703140.png)
+![1587561703140](https://note-image-bed.oss-cn-zhangjiakou.aliyuncs.com/note/1587561703140.png)
 
 + 开启下载中间件
 
-![1587561716048](scrapy.assets/1587561716048.png)
+![1587561716048](https://note-image-bed.oss-cn-zhangjiakou.aliyuncs.com/note/1587561716048.png)
 
 ### 3.5 运行截图
 
-![1587562781420](scrapy.assets/1587562781420.png)
+![1587562781420](https://note-image-bed.oss-cn-zhangjiakou.aliyuncs.com/note/1587562781420.png)
 
 #### 注意：此时发现img里面的内容为空！！！
 
@@ -308,11 +308,11 @@ Selenium是一个自动化的测试工具，这里主要用到了它的Webdriver
 
 
 
-![1587565435891](scrapy.assets/1587565435891.png)
+![1587565435891](https://note-image-bed.oss-cn-zhangjiakou.aliyuncs.com/note/1587565435891.png)
 
 ### 3.7 运行结果
 
-![1587565477968](scrapy.assets/1587565477968.png)
+![1587565477968](https://note-image-bed.oss-cn-zhangjiakou.aliyuncs.com/note/1587565477968.png)
 
 ## 四、写入文件
 
@@ -335,7 +335,7 @@ class CsvPipeline(object):
         print("写入csv文件完毕")
 ```
 
-![1587567406930](scrapy.assets/1587567406930.png)
+![1587567406930](https://note-image-bed.oss-cn-zhangjiakou.aliyuncs.com/note/1587567406930.png)
 
 ### 4.2 写入Json文件
 
@@ -354,7 +354,7 @@ class JsonPipeline(object):
         print("写入json文件完毕")
 ```
 
-![1587567707047](scrapy.assets/1587567707047.png)
+![1587567707047](https://note-image-bed.oss-cn-zhangjiakou.aliyuncs.com/note/1587567707047.png)
 
 ### 4.3写入Excel文件
 
@@ -384,7 +384,7 @@ class ExcelPipeline(object):
 
 
 
-![1587614410663](scrapy.assets/1587614410663.png)
+![1587614410663](https://note-image-bed.oss-cn-zhangjiakou.aliyuncs.com/note/1587614410663.png)
 
 ### 4.4写入mysql数据库
 
@@ -464,7 +464,7 @@ LOG_FILE = logpath
         logging.warning("这是一个异常")
 ```
 
-![1587567972169](scrapy.assets/1587567972169.png)
+![1587567972169](https://note-image-bed.oss-cn-zhangjiakou.aliyuncs.com/note/1587567972169.png)
 
 ### 4.6下载图片
 
@@ -498,7 +498,7 @@ class ImagePipeline(object):
 
 ```
 
-![1587567773495](scrapy.assets/1587567773495.png)
+![1587567773495](https://note-image-bed.oss-cn-zhangjiakou.aliyuncs.com/note/1587567773495.png)
 
 ### 4.7 运行优先级:数字越小先运行
 
